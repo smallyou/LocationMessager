@@ -12,6 +12,7 @@
 		F7F55EA71E4996C8004582B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F55EA51E4996C8004582B0 /* LaunchScreen.storyboard */; };
 		F7F55EB61E499989004582B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F55EB51E499989004582B0 /* AppDelegate.m */; };
 		F7F55EBA1E499ADC004582B0 /* CMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F55EB91E499ADC004582B0 /* CMHomeController.m */; };
+		F7F55EBE1E49A035004582B0 /* CMConstVA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F55EBD1E49A035004582B0 /* CMConstVA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		F7F55EB51E499989004582B0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7F55EB81E499ADC004582B0 /* CMHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHomeController.h; sourceTree = "<group>"; };
 		F7F55EB91E499ADC004582B0 /* CMHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHomeController.m; sourceTree = "<group>"; };
+		F7F55EBB1E499F12004582B0 /* LocationMessager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationMessager.pch; sourceTree = "<group>"; };
+		F7F55EBC1E49A035004582B0 /* CMConstVA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMConstVA.h; sourceTree = "<group>"; };
+		F7F55EBD1E49A035004582B0 /* CMConstVA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMConstVA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,9 @@
 			children = (
 				F7F55EB41E499989004582B0 /* AppDelegate.h */,
 				F7F55EB51E499989004582B0 /* AppDelegate.m */,
+				F7F55EBB1E499F12004582B0 /* LocationMessager.pch */,
+				F7F55EBC1E49A035004582B0 /* CMConstVA.h */,
+				F7F55EBD1E49A035004582B0 /* CMConstVA.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F55EBE1E49A035004582B0 /* CMConstVA.m in Sources */,
 				F7F55EB61E499989004582B0 /* AppDelegate.m in Sources */,
 				F7F55EBA1E499ADC004582B0 /* CMHomeController.m in Sources */,
 				F7F55E991E4996C8004582B0 /* main.m in Sources */,
@@ -309,10 +317,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4683DBG5A6;
+				GCC_PREFIX_HEADER = LocationMessager/Classes/Main/LocationMessager.pch;
 				INFOPLIST_FILE = LocationMessager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.kinglian.start.LocationMessager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmn123.LocationMessager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -322,10 +331,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4683DBG5A6;
+				GCC_PREFIX_HEADER = LocationMessager/Classes/Main/LocationMessager.pch;
 				INFOPLIST_FILE = LocationMessager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.kinglian.start.LocationMessager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmn123.LocationMessager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

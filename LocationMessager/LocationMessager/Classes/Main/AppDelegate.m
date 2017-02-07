@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CMHomeController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     
     /**配置启动相关*/
     UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *vc = [[UIViewController alloc]init];
+    CMHomeController *vc = [[CMHomeController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     window.rootViewController = nav;
     [window makeKeyAndVisible];

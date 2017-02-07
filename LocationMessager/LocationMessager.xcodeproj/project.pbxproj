@@ -11,6 +11,7 @@
 		F7F55EA41E4996C8004582B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F55EA31E4996C8004582B0 /* Assets.xcassets */; };
 		F7F55EA71E4996C8004582B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F55EA51E4996C8004582B0 /* LaunchScreen.storyboard */; };
 		F7F55EB61E499989004582B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F55EB51E499989004582B0 /* AppDelegate.m */; };
+		F7F55EBA1E499ADC004582B0 /* CMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F55EB91E499ADC004582B0 /* CMHomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		F7F55EA81E4996C8004582B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F55EB41E499989004582B0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7F55EB51E499989004582B0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7F55EB81E499ADC004582B0 /* CMHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHomeController.h; sourceTree = "<group>"; };
+		F7F55EB91E499ADC004582B0 /* CMHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				F7F55EAE1E499989004582B0 /* Classes */,
-				F7F55EB71E499997004582B0 /* Other */,
+				F7F55EA31E4996C8004582B0 /* Assets.xcassets */,
+				F7F55EA51E4996C8004582B0 /* LaunchScreen.storyboard */,
+				F7F55EA81E4996C8004582B0 /* Info.plist */,
 				F7F55E971E4996C8004582B0 /* Supporting Files */,
 			);
 			path = LocationMessager;
@@ -90,6 +95,8 @@
 		F7F55EB01E499989004582B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7F55EB81E499ADC004582B0 /* CMHomeController.h */,
+				F7F55EB91E499ADC004582B0 /* CMHomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,16 +122,6 @@
 				F7F55EB51E499989004582B0 /* AppDelegate.m */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		F7F55EB71E499997004582B0 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				F7F55EA31E4996C8004582B0 /* Assets.xcassets */,
-				F7F55EA51E4996C8004582B0 /* LaunchScreen.storyboard */,
-				F7F55EA81E4996C8004582B0 /* Info.plist */,
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +150,7 @@
 		F7F55E8C1E4996C7004582B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CM;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = 23;
 				TargetAttributes = {
@@ -199,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F55EB61E499989004582B0 /* AppDelegate.m in Sources */,
+				F7F55EBA1E499ADC004582B0 /* CMHomeController.m in Sources */,
 				F7F55E991E4996C8004582B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

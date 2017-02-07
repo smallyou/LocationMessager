@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
 #import "CMHomeController.h"
+#import "CMLocationManager.h"
 
 
 
@@ -18,11 +21,11 @@
 
 @implementation AppDelegate
 
-
+#pragma mark - 系统回调方法
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    /**配置启动相关*/
+    // 配置启动相关
     UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     CMHomeController *vc = [[CMHomeController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
@@ -30,6 +33,10 @@
     [window makeKeyAndVisible];
     window.backgroundColor = [UIColor whiteColor];
     self.window = window;
+    
+    
+    // 设置第三方
+    [self setupThirdToolWithOptions:launchOptions];
     
     
     
@@ -62,6 +69,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+
+
+#pragma mark - 自定义方法
+/**设置第三方相关*/
+- (void)setupThirdToolWithOptions:(NSDictionary *)launchOptions
+{
+    //1 设置高德地图
+    [AMapServices sharedServices].apiKey = CMAMapAppKey;
+    
 }
 
 
